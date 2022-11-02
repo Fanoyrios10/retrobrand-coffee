@@ -1,10 +1,23 @@
 .header {
   width: 100%;
-  background-color: #808080c5;
-  position: sticky;
+  background: rgb(36, 28, 21);
+  background: linear-gradient(
+    90deg,
+    rgba(36, 28, 21, 0.8) 0%,
+    rgba(102, 59, 34, 0.8) 50%,
+    rgba(181, 101, 29, 0.8) 100%
+  );
+  position: sticky !important;
   z-index: 10;
   top: 0;
   display: none;
+}
+
+.header a {
+  color: #ffa51e;
+  font-family: 'Sofia', sans-serif;
+  font-weight: bolder;
+  font-size: 1.5rem;
 }
 .header-right {
   float: right;
