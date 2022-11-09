@@ -1,5 +1,8 @@
 const createError = require('http-errors');
 const express = require('express');
+// const favicon = require('serve-favicon');
+const session = require('express-session');
+const bodyParser = require('body-parser');
 const expressLayouts = require('express-ejs-layouts');
 const path = require('path');
 const cookieParser = require('cookie-parser');
@@ -9,6 +12,19 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 
 const app = express();
+app.use(
+  session({
+    secret: 'secret',
+    resave: true,
+    saveUninitialized: true,
+  })
+);
+app.use(
+  bodyParser.urlencoded({
+    extended: true,
+  })
+);
+app.use(bodyParser.json());
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -19,7 +35,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(expressLayouts);
-
+// app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
