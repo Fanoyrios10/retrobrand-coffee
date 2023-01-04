@@ -1,6 +1,5 @@
 const createError = require('http-errors');
 const express = require('express');
-// const favicon = require('serve-favicon');
 const session = require('express-session');
 const bodyParser = require('body-parser');
 const expressLayouts = require('express-ejs-layouts');
@@ -35,7 +34,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(expressLayouts);
-// app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 

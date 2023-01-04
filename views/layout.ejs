@@ -49,7 +49,28 @@
     <!-- Stylesheets end -->
   </head>
   <body>
-    <nav
+    <header
+      id="collapsible_header_l"
+      class="animate__animated animate__bounceInDown"
+    >
+      <ul>
+        <li>
+          <a href="#" style="padding: 0; margin: 0 20px"
+            ><img
+              src="/images/layout/main_logo.png"
+              alt="main_logo"
+              height="60"
+              width="60"
+          /></a>
+        </li>
+        <li><a href="#" class="active_header_link">Home</a></li>
+        <li><a href="#">Sign-Up</a></li>
+        <li><a href="#">Sign-In</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </header>
+    <!-- <nav
       class="navbar navbar-expand-lg header animate__animated animate__bounceInDown"
     >
       <div class="container-fluid">
@@ -92,7 +113,7 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <!-- <nav
       class="header navbar-expand-lg mb-4 header animate__animated animate__bounceInDown"
     >
@@ -183,7 +204,7 @@
       >
     </footer>
     <script defer>
-      let layoutHeaderHome = document.querySelector('.header');
+      let layoutHeaderHome = document.querySelector('#collapsible_header_l');
       console.log(layoutHeaderHome);
       function scrollFunction() {
         if (
