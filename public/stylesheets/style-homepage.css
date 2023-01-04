@@ -54,44 +54,6 @@
   }
  */
 
-#index_header {
-  width: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(36, 28, 21, 0.8) 0%,
-    rgba(102, 59, 34, 0.8) 50%,
-    rgba(181, 101, 29, 0.8) 100%
-  );
-}
-
-#index_header ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-#index_header ul li {
-  float: left;
-}
-
-#index_header ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 18px 20px;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-#index_header ul li a:hover {
-  background-color: gray;
-}
-
-.active_header_link {
-  background-color: rgb(255, 172, 47);
-}
-
 .order-now-button {
   width: 197px;
   height: 64px;

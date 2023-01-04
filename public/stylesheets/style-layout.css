@@ -1,4 +1,42 @@
-#collapsible_header_l {
+#top_navbar {
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(36, 28, 21, 0.8) 0%,
+    rgba(102, 59, 34, 0.8) 50%,
+    rgba(181, 101, 29, 0.8) 100%
+  );
+}
+
+#top_navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#top_navbar ul li {
+  float: left;
+}
+
+#top_navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#top_navbar ul li a:hover {
+  background-color: gray;
+}
+
+.active_header_link {
+  background-color: rgb(255, 172, 47);
+}
+
+#collapsible_navbar_l {
   width: 100%;
   background: rgb(36, 28, 21);
   background: linear-gradient(
@@ -13,25 +51,25 @@
   display: none;
 }
 
-#collapsible_header_l a {
+#collapsible_navbar_l a {
   color: #ffa51e;
   font-family: 'Sofia', sans-serif;
   font-weight: bolder;
   font-size: 1.5rem;
 }
 
-#collapsible_header_l ul {
+#collapsible_navbar_l ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-#collapsible_header_l ul li {
+#collapsible_navbar_l ul li {
   float: left;
 }
 
-#collapsible_header_l ul li a {
+#collapsible_navbar_l ul li a {
   display: block;
   color: white;
   text-align: center;
@@ -40,8 +78,48 @@
   font-size: 16px;
 }
 
-#index_header ul li a:hover {
+#top_navbar ul li a:hover {
   background-color: gray;
+}
+
+#collapsible_navbar_s {
+  width: 100%;
+  background-color: #333;
+  position: relative;
+  display: none;
+  position: sticky !important;
+  z-index: 10;
+  top: 0;
+}
+
+#collapsible_navbar_s #myLinks {
+  display: none;
+}
+
+#collapsible_navbar_s a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+#collapsible_navbar_s a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#collapsible_navbar_s a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04aa6d;
+  color: white;
 }
 
 /* .header-right {

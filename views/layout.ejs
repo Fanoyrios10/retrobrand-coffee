@@ -49,13 +49,24 @@
     <!-- Stylesheets end -->
   </head>
   <body>
-    <header
-      id="collapsible_header_l"
+    <nav id="top_navbar">
+      <ul>
+        <li>
+          <a href="javascript:void(0);" class="active_header_link">Home</a>
+        </li>
+        <li><a href="javascript:void(0);">Sign-Up</a></li>
+        <li><a href="javascript:void(0);">Sign-In</a></li>
+        <li><a href="javascript:void(0);">Shop</a></li>
+        <li><a href="javascript:void(0);">Contact Us</a></li>
+      </ul>
+    </nav>
+    <nav
+      id="collapsible_navbar_l"
       class="animate__animated animate__bounceInDown"
     >
       <ul>
         <li>
-          <a href="#" style="padding: 0; margin: 0 20px"
+          <a href="javascript:void(0);" style="padding: 0; margin: 0 20px"
             ><img
               src="/images/layout/main_logo.png"
               alt="main_logo"
@@ -63,18 +74,41 @@
               width="60"
           /></a>
         </li>
-        <li><a href="#" class="active_header_link">Home</a></li>
-        <li><a href="#">Sign-Up</a></li>
-        <li><a href="#">Sign-In</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li>
+          <a href="javascript:void(0);" class="active_header_link">Home</a>
+        </li>
+        <li><a href="javascript:void(0);">Sign-Up</a></li>
+        <li><a href="javascript:void(0);">Sign-In</a></li>
+        <li><a href="javascript:void(0);">Shop</a></li>
+        <li><a href="javascript:void(0);">Contact Us</a></li>
       </ul>
-    </header>
+    </nav>
+    <nav
+      id="collapsible_navbar_s"
+      class="animate__animated animate__bounceInDown"
+    >
+      <a href="javascript:void(0);" style="padding: 0; margin: 0 20px"
+        ><img
+          src="/images/layout/main_logo.png"
+          alt="main_logo"
+          height="53.5"
+          width="53.5"
+      /></a>
+      <div id="myLinks">
+        <a href="javascript:void(0);">Sign-Up</a>
+        <a href="javascript:void(0);">Sign-In</a>
+        <a href="javascript:void(0);">Shop</a>
+        <a href="javascript:void(0);">Contact Us</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
     <!-- <nav
       class="navbar navbar-expand-lg header animate__animated animate__bounceInDown"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="javascript:void(0);">
           <img
             src="/images/layout/main_logo.png"
             alt="main_logo"
@@ -86,7 +120,7 @@
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+          data-bs-target="javascript:void(0);navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -96,19 +130,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="javascript:void(0);">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sign-Up</a>
+              <a class="nav-link" href="javascript:void(0);">Sign-Up</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sign-In</a>
+              <a class="nav-link" href="javascript:void(0);">Sign-In</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Shop</a>
+              <a class="nav-link" href="javascript:void(0);">Shop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="javascript:void(0);">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -122,7 +156,7 @@
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarResponsive"
+          data-target="javascript:void(0);navbarResponsive"
           aria-controls="navbarResponsive"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -138,25 +172,25 @@
             class="navbar-nav ml-auto text-center large-text-navbar animate__animated animate__fadeInRight"
           >
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="javascript:void(0);">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link sign-up-link" href="#">Sign-Up</a>
+              <a class="nav-link sign-up-link" href="javascript:void(0);">Sign-Up</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link log-in-link" href="#">Sign-In</a>
+              <a class="nav-link log-in-link" href="javascript:void(0);">Sign-In</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Shop</a>
+              <a class="nav-link" href="javascript:void(0);">Shop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="javascript:void(0);">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link logout-link" href="#">Logout</a>
+              <a class="nav-link logout-link" href="javascript:void(0);">Logout</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link user-acount-link" href="#"
+              <a class="nav-link user-acount-link" href="javascript:void(0);"
                 ><i
                   class="fa fa-user-circle"
                   aria-hidden="true"
@@ -165,7 +199,7 @@
               ></a>
             </li>
             <li>
-              <a href="#"
+              <a href="javascript:void(0);"
                 ><img
                   src="/images/layout/main_logo.png"
                   alt="cyberCafeLogo"
@@ -198,13 +232,13 @@
       purpose="page-footer"
     >
       <small purpose="footer-copy"
-        >Copyright &copy; 2022 <a href="#">RetroBrand</a>.
+        >Copyright &copy; 2022 <a href="javascript:void(0);">RetroBrand</a>.
         <br class="d-block d-sm-none" />All rights reserved. Created by Dream
         Team</small
       >
     </footer>
     <script defer>
-      let layoutHeaderHome = document.querySelector('#collapsible_header_l');
+      let layoutHeaderHome = document.querySelector('#collapsible_navbar_s');
       console.log(layoutHeaderHome);
       function scrollFunction() {
         if (
@@ -221,6 +255,14 @@
       window.onscroll = function () {
         scrollFunction();
       };
+      function myFunction() {
+        let x = document.getElementById('myLinks');
+        if (x.style.display === 'block') {
+          x.style.display = 'none';
+        } else {
+          x.style.display = 'block';
+        }
+      }
     </script>
   </body>
 </html>
