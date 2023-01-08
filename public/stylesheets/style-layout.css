@@ -1,3 +1,5 @@
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
 #top_navbar {
   width: 100%;
   background: linear-gradient(
@@ -35,6 +37,9 @@
 .active_header_link {
   background-color: rgb(255, 172, 47);
 }
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
 
 #collapsible_navbar_l {
   width: 100%;
@@ -82,9 +87,17 @@
   background-color: gray;
 }
 
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+
 #collapsible_navbar_s {
   width: 100%;
-  background-color: #333;
+  background: linear-gradient(
+    90deg,
+    rgba(36, 28, 21, 0.8) 0%,
+    rgba(102, 59, 34, 0.8) 50%,
+    rgba(181, 101, 29, 0.8) 100%
+  );
   position: relative;
   display: none;
   position: sticky !important;
@@ -92,35 +105,56 @@
   top: 0;
 }
 
-#collapsible_navbar_s #myLinks {
-  display: none;
-}
-
-#collapsible_navbar_s a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
 #collapsible_navbar_s a.icon {
   background: black;
   display: block;
   position: absolute;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
   right: 0;
   top: 0;
 }
 
-#collapsible_navbar_s a:hover {
-  background-color: #ddd;
-  color: black;
+#collapsible_navbar_s_hamburger_links {
+  display: none;
+}
+
+#collapsible_navbar_s_hamburger_links a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  border-bottom: #312118 2px solid;
+  transition: 1.5s;
+}
+#collapsible_navbar_s_hamburger_links a:last-child {
+  border-bottom: none !important;
+}
+#collapsible_navbar_s_hamburger_links a:first-child {
+  border-top: #312118 2px solid !important;
+}
+#collapsible_navbar_s_logo {
+  display: inline-block !important;
+  border: none !important;
+}
+
+#collapsible_navbar_s_hamburger_links a:hover {
+  text-decoration: underline white;
+  background-color: rgba(165, 42, 42, 0.5);
 }
 
 .active {
   background-color: #04aa6d;
   color: white;
 }
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
 
 /* .header-right {
   float: right;
@@ -211,3 +245,6 @@ footer {
   margin: auto;
   margin-bottom: 20px;
 }
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */

@@ -54,6 +54,12 @@
   }
  */
 
+.carousel_index_caption {
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+}
+
 .order-now-button {
   width: 197px;
   height: 64px;

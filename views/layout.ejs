@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RetroBrand</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <meta name="author" content="Fanoyrios Gkialis" />
@@ -19,13 +19,8 @@
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
     <script
@@ -34,21 +29,23 @@
     ></script>
     <!-- Script Librarys end -->
     <!-- Stylesheets begin -->
-    <link rel="stylesheet" href="/stylesheets/style-homepage.css" />
-    <link rel="stylesheet" href="/stylesheets/style-layout.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/stylesheets/style-homepage.css" />
+    <link rel="stylesheet" href="/stylesheets/style-layout.css" />
     <!-- Stylesheets end -->
   </head>
   <body>
+    <!-- Top navigation Bar -->
+
     <nav id="top_navbar">
       <ul>
         <li>
@@ -60,6 +57,9 @@
         <li><a href="javascript:void(0);">Contact Us</a></li>
       </ul>
     </nav>
+
+    <!-- Collapsible navigation Bar for medium and large screens-->
+
     <nav
       id="collapsible_navbar_l"
       class="animate__animated animate__bounceInDown"
@@ -83,18 +83,24 @@
         <li><a href="javascript:void(0);">Contact Us</a></li>
       </ul>
     </nav>
+
+    <!-- Collapsible navigation Bar for small screens-->
+
     <nav
       id="collapsible_navbar_s"
       class="animate__animated animate__bounceInDown"
     >
-      <a href="javascript:void(0);" style="padding: 0; margin: 0 20px"
+      <a
+        href="javascript:void(0);"
+        style="padding: 0; margin: 0 47px 0 20px"
+        id="collapsible_navbar_s_logo"
         ><img
           src="/images/layout/main_logo.png"
           alt="main_logo"
           height="53.5"
           width="53.5"
       /></a>
-      <div id="myLinks">
+      <div id="collapsible_navbar_s_hamburger_links">
         <a href="javascript:void(0);">Sign-Up</a>
         <a href="javascript:void(0);">Sign-In</a>
         <a href="javascript:void(0);">Shop</a>
@@ -256,7 +262,7 @@
         scrollFunction();
       };
       function myFunction() {
-        let x = document.getElementById('myLinks');
+        let x = document.getElementById('collapsible_navbar_s_hamburger_links');
         if (x.style.display === 'block') {
           x.style.display = 'none';
         } else {
