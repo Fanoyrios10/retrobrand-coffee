@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
     <title>RetroBrand</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <meta name="author" content="Fanoyrios Gkialis" />
@@ -244,29 +244,29 @@
       >
     </footer>
     <script defer>
-      let layoutHeaderHome = document.querySelector('#collapsible_navbar_s');
-      console.log(layoutHeaderHome);
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 480 ||
-          document.documentElement.scrollTop > 480
-        ) {
-          layoutHeaderHome.style.display = 'block';
-          console.log(1);
-        } else {
-          layoutHeaderHome.style.display = 'none';
-          console.log(0);
-        }
-      }
-      window.onscroll = function () {
-        scrollFunction();
-      };
+      let collapsibleNavbarL = document.querySelector('#collapsible_navbar_l');
+      let collapsibleNavbarS = document.querySelector('#collapsible_navbar_s');
       function myFunction() {
         let x = document.getElementById('collapsible_navbar_s_hamburger_links');
         if (x.style.display === 'block') {
           x.style.display = 'none';
         } else {
           x.style.display = 'block';
+        }
+      }
+      ['scroll', 'resize'].forEach((event) => {
+        window.addEventListener(event, NavbarAdapt);
+      });
+      function NavbarAdapt() {
+        if (window.scrollY > 480 && window.innerWidth > 770) {
+          collapsibleNavbarS.style.display = 'none';
+          collapsibleNavbarL.style.display = 'block';
+        } else if (window.scrollY > 480 && window.innerWidth <= 770) {
+          collapsibleNavbarL.style.display = 'none';
+          collapsibleNavbarS.style.display = 'block';
+        } else {
+          collapsibleNavbarS.style.display = 'none';
+          collapsibleNavbarL.style.display = 'none';
         }
       }
     </script>

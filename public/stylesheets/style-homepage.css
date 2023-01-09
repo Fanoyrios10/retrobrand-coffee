@@ -60,6 +60,21 @@
   transform: translate(-50%, -50%);
 }
 
+@media (width < 868px) {
+  .carousel_index_caption {
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+  }
+  .carousel_index_caption img:first-child {
+    height: 70px;
+    width: 70px;
+  }
+  .desc {
+    font-size: 0.8rem !important;
+  }
+}
+
 .order-now-button {
   width: 197px;
   height: 64px;

@@ -15,10 +15,11 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+  text-align: center;
 }
 
 #top_navbar ul li {
-  float: left;
+  display: inline-block;
 }
 
 #top_navbar ul li a {
@@ -68,10 +69,11 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+  text-align: center;
 }
 
 #collapsible_navbar_l ul li {
-  float: left;
+  display: inline-block;
 }
 
 #collapsible_navbar_l ul li a {
@@ -81,10 +83,12 @@
   padding: 18px 20px;
   text-decoration: none;
   font-size: 16px;
+  transition: 1.5s;
 }
 
-#top_navbar ul li a:hover {
-  background-color: gray;
+#collapsible_navbar_l ul li a:hover {
+  text-decoration: underline white;
+  background-color: rgba(165, 42, 42, 0.5);
 }
 
 /* --------------------------------------------------- */
@@ -153,6 +157,9 @@
   color: white;
 }
 
+.active:hover {
+  background-color: rgb(255, 172, 47);
+}
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 
