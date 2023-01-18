@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=0.7" />
     <title>RetroBrand</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="/images/layout/favicon.ico"
+      type="image/x-icon"
+    />
     <meta name="author" content="Fanoyrios Gkialis" />
     <!-- Script Librarys begin -->
     <script
@@ -27,6 +31,7 @@
       src="https://kit.fontawesome.com/cc178605cc.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="/JS/layout.js"></script>
     <!-- Script Librarys end -->
     <!-- Stylesheets begin -->
     <link
@@ -41,6 +46,7 @@
     />
     <link rel="stylesheet" href="/stylesheets/style-homepage.css" />
     <link rel="stylesheet" href="/stylesheets/style-layout.css" />
+    <link rel="stylesheet" href="/stylesheets/style-sign-up.css" />
     <!-- Stylesheets end -->
   </head>
   <body>
@@ -51,7 +57,7 @@
         <li>
           <a href="javascript:void(0);" class="active_header_link">Home</a>
         </li>
-        <li><a href="javascript:void(0);">Sign-Up</a></li>
+        <li><a href="/users/sign-up">Sign-Up</a></li>
         <li><a href="javascript:void(0);">Sign-In</a></li>
         <li><a href="javascript:void(0);">Shop</a></li>
         <li><a href="javascript:void(0);">Contact Us</a></li>
@@ -100,13 +106,16 @@
           height="53.5"
           width="53.5"
       /></a>
-      <div id="collapsible_navbar_s_hamburger_links">
+      <div
+        id="collapsible_navbar_s_hamburger_links"
+        class="animate__animated animate__bounceInRight"
+      >
         <a href="javascript:void(0);">Sign-Up</a>
         <a href="javascript:void(0);">Sign-In</a>
         <a href="javascript:void(0);">Shop</a>
         <a href="javascript:void(0);">Contact Us</a>
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="javascript:void(0);" class="icon" id="hamburger_menu">
         <i class="fa fa-bars"></i>
       </a>
     </nav>
@@ -243,32 +252,5 @@
         Team</small
       >
     </footer>
-    <script defer>
-      let collapsibleNavbarL = document.querySelector('#collapsible_navbar_l');
-      let collapsibleNavbarS = document.querySelector('#collapsible_navbar_s');
-      function myFunction() {
-        let x = document.getElementById('collapsible_navbar_s_hamburger_links');
-        if (x.style.display === 'block') {
-          x.style.display = 'none';
-        } else {
-          x.style.display = 'block';
-        }
-      }
-      ['scroll', 'resize'].forEach((event) => {
-        window.addEventListener(event, NavbarAdapt);
-      });
-      function NavbarAdapt() {
-        if (window.scrollY > 480 && window.innerWidth > 770) {
-          collapsibleNavbarS.style.display = 'none';
-          collapsibleNavbarL.style.display = 'block';
-        } else if (window.scrollY > 480 && window.innerWidth <= 770) {
-          collapsibleNavbarL.style.display = 'none';
-          collapsibleNavbarS.style.display = 'block';
-        } else {
-          collapsibleNavbarS.style.display = 'none';
-          collapsibleNavbarL.style.display = 'none';
-        }
-      }
-    </script>
   </body>
 </html>

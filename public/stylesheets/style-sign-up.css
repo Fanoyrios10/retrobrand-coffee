@@ -1,0 +1,51 @@
+.signup_header {
+  background-image: url('/images/Sign_up/sign_up_main.jpg');
+}
+.signup_header_text {
+  text-align: center;
+  color: #ffa51e;
+  padding-top: 200px;
+  font-weight: bolder;
+  font-size: 4em;
+}
+
+/* .signup_main {
+  margin: auto;
+  text-align: center;
+} */
+
+.form-step {
+  /* width: 100%; */
+  border-bottom: 2px solid #fdd132;
+  height: 46px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form-step-number {
+  float: left;
+  width: 44px;
+  height: 100%;
+  line-height: 46px;
+  text-align: center;
+  background: #292929;
+  border-radius: 5px 0 0 0;
+  color: #ffcb05;
+  font-family: tahoma;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.form-step-title {
+  color: #333333;
+  font-family: tahoma;
+  font-size: 16px;
+  font-weight: bold;
+  background: #ededed;
+  border-radius: 0 5px 0 0;
+  float: left;
+  height: 100%;
+  line-height: 46px;
+  text-align: left;
+  padding-left: 30px;
+}
