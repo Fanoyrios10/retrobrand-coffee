@@ -1,15 +1,147 @@
-<h1>Test</h1>
 <header class="top_header signup_header">
   <h1 class="signup_header_text">Sign Up</h1>
 </header>
 <article class="signup_main">
   <h2>Sign up New Member</h2>
   <form action="" method="post">
-    <section>
+    <section class="sign-up-user-information-section">
       <div class="form-step">
         <div class="form-step-number">1</div>
         <div class="form-step-title">User Information</div>
       </div>
+      <table>
+        <tr>
+          <td>
+            email (it will be used as username when logging in<span
+              style="color: red"
+              >*</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="email"
+              name="signup-email"
+              id="signup-email"
+              placeholder="abc@hotmail.com"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            password (it must be between 8-15 characters)<span
+              style="color: red"
+              >*</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="password"
+              name="signup-password"
+              id="signup-password"
+              minlength="8"
+              maxlength="15"
+              placeholder="Keep this password to yourself"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            confirm password (reenter it exactly as in the above field)<span
+              style="color: red"
+              >*</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="password"
+              name="signup-password-confirm"
+              id="signup-password-confirm"
+              minlength="8"
+              maxlength="15"
+              placeholder="insert your password again here"
+              required
+            />
+          </td>
+        </tr>
+      </table>
     </section>
+    <section>
+      <div class="form-step">
+        <div class="form-step-number">2</div>
+        <div class="form-step-title">Delivery Information</div>
+      </div>
+      <table>
+        <tr>
+          <td colspan="3">Fullname</td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <input
+              type="text"
+              name="signup-fullname"
+              id="signup-fullname"
+              placeholder="Arthur Wellslay"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 50%">Address</td>
+          <td style="width: 30%">City</td>
+          <td style="width: 20%">Postal Code</td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="text"
+              name="signup-address"
+              id="signup-address"
+              placeholder="Grosbery street 89"
+            />
+          </td>
+          <td>
+            <input
+              type="text"
+              name="signup-city"
+              id="signup-city"
+              placeholder="London East end"
+            />
+          </td>
+          <td>
+            <input
+              type="text"
+              name="signup-postal-code"
+              id="signup-postal-code"
+              placeholder="82100"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Home Phone</td>
+          <td colspan="2">Mobile Phone</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="tel" name="signup-home-phone" id="signup-home-phone" />
+          </td>
+          <td colspan="2">
+            <input
+              type="tel"
+              name="signup-mobile-phone"
+              id="signup-mobile-phone"
+            />
+          </td>
+        </tr>
+      </table>
+    </section>
+    <button type="submit" class="btn btn-primary">Sign Up</button>
   </form>
 </article>
+<script src="/JS/sign-up.js" defer></script>
